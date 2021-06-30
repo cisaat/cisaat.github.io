@@ -23,9 +23,9 @@ body {
 }
 
 /* nav */
-.logo a{
-    color: #ddffbc;
-    text-decoration: none;
+.logo a {
+  color: #ddffbc;
+  text-decoration: none;
 }
 .menu_list {
   display: flex;
@@ -41,13 +41,11 @@ body {
   text-decoration: none;
   color: #ddffbc;
 }
-.menu_list ul li a:hover{
-    transition: 0.2s;
-    border-bottom: 4px solid #ddffbc;
-    border-radius: 5px;
+.menu_list ul li a:hover {
+  transition: 0.2s;
+  border-bottom: 4px solid #ddffbc;
+  border-radius: 5px;
 }
-
-
 
 /* banner */
 .row {
@@ -98,7 +96,7 @@ img {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
-  margin-left: 10px;
+  margin-left: 25px;
 }
 .icon_fb {
   width: 20px;
@@ -125,67 +123,116 @@ img {
   text-decoration: none;
   color: #fff;
 }
-.icon_fb:hover,.icon_gmail:hover,.icon_map:hover{
-    transition: 0.25s;
-    transform: translateY(3px);
+.icon_fb:hover,
+.icon_gmail:hover,
+.icon_map:hover {
+  transition: 0.25s;
+  transform: translateY(3px);
 }
 
 /* about */
-.about{
-    width: 100%;
-    background-color: #91C788;
+.about {
+  width: 100%;
+  height: 1100px;
+  background-color: #91c788;
 }
-.box{
-    width: 100%;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   border: 2px solid #ddffbc;
-   border-radius: 20px;
-   box-shadow: 10px 10px 5px 4px rgba(0, 0, 0, 0.5);
-   padding: 70px;
-   margin-top: 40px;
-   margin-bottom: 70px;
+.box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #ddffbc;
+  border-radius: 20px;
+  box-shadow: 10px 10px 5px 4px rgba(0, 0, 0, 0.5);
+  padding: 70px;
+  margin-top: 40px;
+  margin-bottom: 70px;
 }
-.heading{
-    font-size: 30px;
-    font-weight: 800;
-    color: #52734d;
+.heading {
+  font-size: 30px;
+  font-weight: 800;
+  color: #52734d;
 }
-.saparator{
-    width: 100px;
-    height: 10px;
-    background-image: url(img/saparator.png);
-    background-position: center;
-    background-size: cover;
-    margin-bottom: 60px;
+.saparator {
+  width: 100px;
+  height: 10px;
+  background-image: url(img/saparator.png);
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 60px;
 }
-.text{
-    color: #52734d;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 800;
-    margin-bottom: 70px;
+.text {
+  color: #52734d;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 70px;
 }
-.about .btn{
-    padding: 10px 20px;
-    border: 2px solid #ddffbc;
-    border-radius: 20px;
-    text-decoration: none;
-    color: #ddffbc;
+.btn {
+  padding: 10px 20px;
+  border: 2px solid #ddffbc;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #ddffbc;
 }
-.about .btn:hover{
-    background-color: #52734d;
-    color: #ddffbc;
-    transition: 1s;
+.btn:hover {
+  background-color: #52734d;
+  color: #ddffbc;
+  transition: 1s;
 }
 
-.wave{
-    margin-top: 160px;
-    width: 100%;
-    height: 209px;
-    background-image: url(img/wave.png);
-    background-position: center;
-    background-size: cover;
+.wave {
+  width: 100%;
+  height: 209px;
+  background-image: url(img/wave.png);
+  background-position: center;
+  background-size: cover;
+}
+.wave2 {
+  margin-top: 175px;
+  width: 100%;
+  height: 209px;
+  background-image: url(img/wave2.png);
+  background-position: center;
+  background-size: cover;
+}
+.animasi {
+  position: relative;
+  width: 400px;
+}
+.kotak{
+  width: 50%;
+}
+.box2 {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #ddffbc;
+  border-radius: 20px;
+  box-shadow: 10px 10px 5px 4px rgba(0, 0, 0, 0.5);
+  padding: 70px;
+  margin-top: 40px;
+  margin-bottom: 70px;
+}
+.text_muda{
+  color: #ddffbc;
+  font-size: 18px;
+  font-weight: 500;
+  border: 2px ;
+  border-style: dashed;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+.image img {
+ position: relative;
+ width: 350px;
+ border-radius: 20px;
+ margin-left: 200px;
+}
+.sejarah .btn:hover{
+  background-color: #ddffbc;
+  color: #52734d;
 }
