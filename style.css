@@ -61,7 +61,7 @@ body {
   width: 100%;
   margin-top: 70px;
 }
-img {
+.row img {
   max-width: 700px;
   position: absolute;
   right: 0;
@@ -235,4 +235,34 @@ img {
 .sejarah .btn:hover{
   background-color: #ddffbc;
   color: #52734d;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* responsife */
+@media screen and (max-width:480px){
+  .row img{
+    width: 480px;
+  }
+  .col {
+    margin-top: 20px;
+  }
+  .col .heading{
+    font-size: 30px;
+  }
+  .col .teks{
+    font-size: 12px;
+  }
+  .icon{
+    width: 35%;
+    margin-left: 10px;
+  }
 }
