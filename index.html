@@ -20,7 +20,7 @@
         <div class="menu_list">
           <ul>
             <li class="list_item">
-              <a href="#about"> About </a>
+              <a href="#visimisi"> Visi & Misi </a>
             </li>
           </ul>
           <ul>
@@ -69,19 +69,23 @@
       </div>
     </section>
 
-    <!-- about -->
-    <section class="about" id="about">
+    <!-- visimisi -->
+    <section class="visimisi" id="visimisi">
       <!-- wave -->
       <div class="wave"></div>
       <div class="container">
         <div class="box">
-          <div class="heading">About</div>
+          <div class="heading">Visi & Misi</div>
           <div class="saparator"></div>
 
-          <div class="text">
+          <div class="heading">Visi</div>
+          <div class="text_muda">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, dignissimos magnam! Expedita explicabo quibusdam sit maiores doloremque cum ipsa, ad itaque, atque asperiores ex nostrum eveniet fugiat unde eaque a.
           </div>
-          <a href="" class="btn">Read More</a>
+          <div class="heading">Misi</div>
+          <div class="text_muda">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum placeat tempore dolorum? Reiciendis rem possimus ipsum veritatis ex velit sapiente quam. Ab quia sint et sit fugit corrupti nulla. Molestiae.
+          </div>
         </div>
       </div>
       <!-- wave -->
@@ -90,6 +94,8 @@
 
     <section class="sejarah" id="sejarah">
       <div class="container">
+        <div class="heading_terang">Sejarah</div>
+        <div class="saparator2"></div>
         <div class="box2">
           <div class="kotak">
             <div class="text_muda">
@@ -98,7 +104,10 @@
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit exercitationem molestias ratione omnis quae reprehenderit nam ducimus, facere itaque. Quo ratione dolorum reprehenderit impedit possimus amet molestiae porro
                 numquam dolore!
               </p>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi eaque perferendis ex soluta cum beatae quam, officia, quia fuga molestias voluptas voluptate unde consequuntur quasi aliquam asperiores assumenda voluptatem aperiam.......</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi eaque perferendis ex soluta cum beatae quam, officia, quia fuga molestias voluptas voluptate unde consequuntur quasi aliquam asperiores assumenda voluptatem
+                aperiam.......
+              </p>
             </div>
             <a href="" class="btn">Read More</a>
           </div>
@@ -109,11 +118,30 @@
       </div>
     </section>
 
-
-
     <section class="struktur" id="struktur">
-       
-
+      <div class="container">
+        <div class="row_2">
+          <div class="box">
+            <h2 class="name">Product Name</h2>
+            <a href="" class="buy">Buy Now</a>
+            <div class="circle">
+              <img src="../css3/img/ft.png" alt="" class="produk" />
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+
+    <section class="photo" id="photo"></section>
+
+    <section class="contact" id="contact"></section>
+
+    <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll(".box"), {
+        max: 25,
+        speed: 400,
+      });
+    </script>
   </body>
 </html>
