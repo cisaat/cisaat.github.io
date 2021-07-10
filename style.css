@@ -163,11 +163,11 @@ nav ul li a:hover {
   gap: 10px;
   justify-content: center;
   align-items: center;
-  margin-bottom: 100px;
+  margin-bottom: 130px;
 }
 .col {
   width: 100%;
-  margin-top: 70px;
+  margin-top: 200px;
 }
 .row img {
   max-width: 700px;
