@@ -164,10 +164,13 @@ nav ul li a:hover {
   justify-content: center;
   align-items: center;
   margin-bottom: 130px;
+  transition: 1s;
 }
 .col {
   width: 100%;
   margin-top: 200px;
+  animation: inLeft 0.5s forwards;
+  /* transition: 0.7s; */
 }
 .row img {
   max-width: 700px;
@@ -256,6 +259,7 @@ nav ul li a:hover {
   margin-top: 40px;
   margin-bottom: 70px;
   position: relative;
+  animation: inUp 1s forwards;
 }
 .heading {
   font-size: 30px;
@@ -559,6 +563,181 @@ footer {
 }
 
 
+#sejarah{
+  margin-top: 50px;
+}
+
+/* Back to top */
+#button {
+  display: inline-block;
+  background-color: #ddffbc;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* table */
+
+table.products-table {
+  border-collapse: separate;
+  border-radius: 10px;
+  border-spacing: 0;
+  box-shadow: 0 0 25px #aaa;
+  margin: 4rem 0;
+  width: 100%;
+}
+
+th {
+  background-color: #52734d;
+  font-weight: normal;
+  border-bottom: 1px solid #d1d1d1;
+}
+
+th,
+td {
+  line-height: 1.5;
+  padding: 0.75em;
+  text-align: center;
+}
+
+td {
+  background-color: #52734d;
+}
+
+td:first-child {
+  font-weight: bold;
+  text-align: left;
+}
+
+
+thead th:first-child {
+    border-top-left-radius: 10px;
+    text-align: left;
+}
+
+thead th:last-child {
+    border-top-right-radius: 10px;
+}
+
+tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+
+tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}
+
+/* Stack rows vertically on small screens */
+@media (max-width: 30rem) {
+  /* Hide column labels */
+  thead tr {
+    position: absolute;
+    top: -9999rem;
+    left: -9999rem;
+  }
+
+  tbody tr td {
+    border-radius: none;
+    text-align: left;
+  }
+
+  tbody tr:first-child td:first-child {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  tbody tr:last-child td:last-child {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  /* Leave a space between table rows */
+  tr + tr td:first-child {
+    border-top: 1px solid #d1d1d1;
+  }
+
+  /* Get table cells to act like rows */
+  tr,
+  td {
+    display: block;
+  }
+
+  td {
+    border: none;
+    /* Leave a space for data labels */
+    padding-left: 50%;
+  }
+
+  /* Data labels */
+  td:before {
+    content: attr(data-label);
+    display: inline-block;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-left: -100%;
+    width: 100%;
+  }
+}
+
+/* animasi */
+@keyframes fadeIn {
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+@keyframes inLeft {
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(20px);
+  }
+}
+@keyframes inUp {
+  0%{
+    transform: translateY(0);
+  }
+  100%{
+    transform: translateY(20px);
+  }
+}
+
+
+/* responsif */
 
 
 @media screen and (max-width: 480px) {
@@ -669,40 +848,3 @@ footer {
 }
 
 
-/* Back to top */
-#button {
-  display: inline-block;
-  background-color: #ddffbc;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  border-radius: 4px;
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  transition: background-color .3s, 
-    opacity .5s, visibility .5s;
-  opacity: 0;
-  visibility: hidden;
-  z-index: 1000;
-}
-#button::after {
-  content: "\f077";
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 2em;
-  line-height: 50px;
-  color: #fff;
-}
-#button:hover {
-  cursor: pointer;
-  background-color: #333;
-}
-#button:active {
-  background-color: #555;
-}
-#button.show {
-  opacity: 1;
-  visibility: visible;
-}
